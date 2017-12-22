@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		body{
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+		}
+		.warp{
+			width: 600px;
+			height: 600px;
+			position: relative;
+			-webkit-transform-style: preserve-3d;
+			animation: qing;
+			animation-delay: 0s;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+		.box{
+			width: 400px;
+			height: 400px;
+			position: absolute;	
+			top: 100px;
+			left: 400px;
+		}
+		.box1{
+			transform: translateZ(200px);
+			background-image: url(img/1489490806907.jpeg);
+			background-size: 100%;
+		}
+		.box2{
+			transform: translateZ(-200px) rotateY(180deg);
+			background-image: url(img/1489490710997.jpeg);
+			background-position-y: -40px;
+			background-size: 100%;
+		}
+		.box3{
+			transform: rotateY(90deg) translateZ(200px);
+			background-image: url(img/1489490812476.jpeg);
+			background-size: 100%;
+		}
+		.box4{
+			transform: rotateY(270deg) translateZ(200px);
+			background-image: url(img/1489490816277.jpeg);
+			background-size: 100%;
+		}
+		.box5{
+			transform: rotateX(90deg) translateZ(200px);
+			background-image: url(img/1489490736564.jpeg);
+			background-size: 100%;
+		}
+		.box6{
+			transform: rotateX(90deg) translateZ(-200px);
+			background-image: url(img/1489490801354.jpeg);
+			background-size: 100%;
+		}
+		@keyframes qing{
+			from{
+				transform: rotateY(0) rotateZ(0) rotateX(0);
+				transform-origin: center center;
+			}
+			to{
+				transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+			}
+		}
+		p,h1,h2,h3{
+			font-family: "楷体";
+			font-size: 28px;
+			animation-name: dzq;
+			animation-delay: 0s;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes dzq{
+			0%{
+				color: white;
+			}
+			50%{
+				color: yellow;
+			}
+			100%{
+				color: yellowgreen;
+			}
+		}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<p>不要辜负美好时光</p>
+		<embed src="唐嫣、罗晋 - 最浪漫的事.mp3" hidden="true"></embed>
+		<div class="warp">
+			
+		<div class="box1 box"></div>
+		<div class="box2 box"></div>
+		<div class="box3 box"></div>
+		<div class="box4 box"></div>
+		<div class="box5 box"></div>
+		<div class="box6 box"></div>
+		</div>
+	</body>
+</html>
